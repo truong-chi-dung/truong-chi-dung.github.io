@@ -1,0 +1,163 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.App{
+  align-items: center;
+  justify-content: center;
+  margin: 100px 100px;
+}
+
+/* Grid */
+.row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col{
+  width: 33.33%;
+  padding: 1.5%;
+}
+
+@media screen and (max-width: 1180px){
+  .col{
+      padding: 1.5%;
+      width: 100%;
+      margin-right: auto;
+  }
+}
+
+/* Header */
+.header{
+  padding: 40px;
+}
+
+.nasa-collection {
+  color: #000000;
+  font-family: Helvetica;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -1.21px;
+  line-height: 60px;
+  opacity: 0.30327;
+  text-align: left;
+  display: inline-block;
+}
+
+.add{
+  background-color: #784CC0;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  float: right;
+  padding: 10px 15px;
+  align-items: center;
+  display: flex;
+}
+
+.add:hover{
+  background-color: #976BE2;
+}
+
+.add:active{
+  background-color: #5D3999;
+}
+
+.addimg{
+  filter: invert(100%);
+  margin-right: 5px;
+}
+
+/* Itemlist */
+.video{
+  border-radius: 3px;
+  width: 100%;
+  min-width: 300px;
+  height: 168px;
+  -webkit-box-shadow: 0 8px 6px -6px grey;
+      -moz-box-shadow: 0 8px 6px -6px grey;
+          box-shadow: 0 20px 12px -10px grey;
+}
+
+.author {
+  font-weight: 400;
+  letter-spacing: 0.09px;
+  line-height: 21px;
+  opacity: 0.6000000238418579;
+  width: 100%;
+  min-width: 300px; 
+  margin-top: 20px;
+}
+
+.datecreated{
+  float: right;
+}
+
+.title {
+  font-family: Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.58px;
+  line-height: 29px;
+  width: 100%;
+  min-width: 300px;
+  text-align: left;
+  margin: 10px 0px;
+}
+
+.description{
+  font-family: Helvetica;
+  font-weight: 400;
+  letter-spacing: 0.11px;
+  line-height: 21px;
+  opacity: 0.6000000238418579;
+  width: 100%;
+  min-width: 300px;
+  text-align: left;
+}
+
+/* Button */
+.favorite, .edit, .delete {
+  background-color: white;
+  border: 1px solid #CECED2;
+  border-radius: 3px;
+  opacity: 0.4000000059604645;
+  width: 44px;
+  height: 44px;
+  margin: 10px 15px 15px 0px;
+}
+
+.favorite:hover, .edit:hover, .delete:hover {
+  opacity: 1;
+}
+
+/* Play button */
+.play-btn{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3), inset 0 2px 0 0 rgba(255, 255, 255, 0.25);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: -110px;
+  left: 150px;
+}
+
+.playimg{
+  position: relative;
+  top: 14px;
+  left: 18px;
+}
